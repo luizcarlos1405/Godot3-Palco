@@ -1,7 +1,6 @@
 extends KinematicBody2D
 
 signal velocidade_alterada
-signal estado_alterad0
 
 export var aceleracao = 4000
 export var desaceleracao = 3000
@@ -40,6 +39,7 @@ func _physics_process(delta):
 		ou seja, alcançar a velocidade zero. """
 		velocidade_alvo = 0
 	
+	# VELOCIDADE EM X
 	""" Calculamos se a velocidade irá variar com o valor de aceleração ou
 	de desaceleração. Para isso precisamos apenas saber se há direção de
 	entrada em x, pois se o personagem estiver tentando se mover usaremos

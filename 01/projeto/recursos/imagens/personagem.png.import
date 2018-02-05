@@ -10,7 +10,7 @@ source_file="res://recursos/imagens/personagem.png"
 source_md5="d8b444e04af52e349407261872cdea26"
 
 dest_files=[ "res://.import/personagem.png-eafcae9b4b79ea476774ad27e6e4c180.stex" ]
-dest_md5="061e6f6da34f752eebd3ebf941199269"
+dest_md5="e45370f98abeddde91fcf0f1bdbeab8c"
 
 [params]
 
@@ -19,7 +19,7 @@ compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

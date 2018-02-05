@@ -10,7 +10,7 @@ source_file="res://recursos/imagens/jogador.png"
 source_md5="811cc1f4458e65c7c90420a67a9ed437"
 
 dest_files=[ "res://.import/jogador.png-25a6caed121b128c877698b77ec78226.stex" ]
-dest_md5="7c727dfb9b28a0b330eff06949de9299"
+dest_md5="1bf7735fd120ef6e1752ee08f45c3431"
 
 [params]
 
@@ -19,7 +19,7 @@ compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

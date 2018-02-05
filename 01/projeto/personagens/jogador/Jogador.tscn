@@ -4,13 +4,11 @@
 [ext_resource path="res://personagens/jogador/Jogador.gd" type="Script" id=2]
 [ext_resource path="res://recursos/imagens/jogador.png" type="Texture" id=3]
 
-[node name="Jogador" instance=ExtResource( 1 )]
+[node name="Jogador" index="0" instance=ExtResource( 1 )]
 
 script = ExtResource( 2 )
-aceleracao = 4000
-desaceleracao = 3000
 
-[node name="personagem" parent="Pivo" index="0"]
+[node name="personagem" parent="." index="0"]
 
 texture = ExtResource( 3 )
 
