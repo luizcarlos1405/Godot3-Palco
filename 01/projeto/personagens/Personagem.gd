@@ -52,7 +52,7 @@ func _physics_process(delta):
 	
 	""" Usamos a função aproximar (definida abaixo) para aproximar o valor
 	da velocidade_atual.x para a velocidade_alvo com a variação calculada
-	acima (ou seja, numa taxa de aceleracao ou desaceleracao por segundo. """
+	acima (ou seja, numa taxa de aceleracao ou desaceleracao por segundo). """
 	velocidade_atual.x = aproximar(velocidade_atual.x, velocidade_alvo * direcao_entrada.x, variacao)
 	
 	""" Função move_and_slide move e desliza o jogador por um body
