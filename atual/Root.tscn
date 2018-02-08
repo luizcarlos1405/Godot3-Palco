@@ -12,13 +12,14 @@ extents = Vector2( 112.256, 10 )
 custom_solver_bias = 0.0
 extents = Vector2( 10, 171.327 )
 
-[node name="Root" type="Node"]
+[node name="Root" type="Node" index="0"]
 
 [node name="Jogador" parent="." index="0" instance=ExtResource( 1 )]
 
 position = Vector2( 390, 212 )
 aceleracao = 7000
 desaceleracao = 5000
+fator_pulo_fraco = 2
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." index="1"]
 
