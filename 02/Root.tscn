@@ -1,0 +1,84 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://personagens/jogador/Jogador.tscn" type="PackedScene" id=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+custom_solver_bias = 0.0
+extents = Vector2( 112.256, 10 )
+
+[sub_resource type="RectangleShape2D" id=2]
+
+custom_solver_bias = 0.0
+extents = Vector2( 10, 171.327 )
+
+[node name="Root" type="Node" index="0"]
+
+[node name="Jogador" parent="." index="0" instance=ExtResource( 1 )]
+
+position = Vector2( 390, 212 )
+aceleracao = 7000
+desaceleracao = 5000
+fator_pulo_fraco = 2
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." index="1"]
+
+position = Vector2( 203, 320 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" index="0"]
+
+shape = SubResource( 1 )
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="." index="2"]
+
+position = Vector2( 563, 317 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2" index="0"]
+
+shape = SubResource( 1 )
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="." index="3"]
+
+position = Vector2( 376, 394 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D3" index="0"]
+
+shape = SubResource( 1 )
+
+[node name="StaticBody2D4" type="StaticBody2D" parent="." index="4"]
+
+position = Vector2( 665, 135 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D4" index="0"]
+
+shape = SubResource( 2 )
+
+
