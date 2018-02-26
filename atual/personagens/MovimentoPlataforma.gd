@@ -26,6 +26,8 @@ var velocidade_alvo = 0.0
 mover o personagem em x e em y. """
 var velocidade_atual = Vector2()
 
+onready var global = get_node("/root/Global")
+
 """ Para movimento e cálculos de física é recomendado o _physics_process
 no lugar de _process. """
 func _physics_process(delta):
@@ -74,7 +76,7 @@ func _movimento_horizontal(delta):
 	""" Usamos a função aproximar (definida abaixo) para aproximar o valor
 	da velocidade_atual.x para a velocidade_alvo com a variação calculada
 	acima (ou seja, numa taxa de aceleracao ou desaceleracao por segundo). """
-	velocidade_atual.x = aproximar(velocidade_atual.x, velocidade_alvo * direcao_entrada.x, variacao)
+	velocidade_atual.x = global.aproximar(velocidade_atual.x, velocidade_alvo * direcao_entrada.x, variacao)
 
 func _movimento_vertical(delta):
 	# Se o personagem estiver no chão
@@ -101,17 +103,4 @@ func _movimento_vertical(delta):
 		variacao = variacao * fator_pulo_fraco
 	
 	# Finalmente aplica-se a velociade em y
-	velocidade_atual.y = aproximar(velocidade_atual.y, velocidade_queda, variacao)
-
-""" Essa função aproxima o valor atual para o final em uma taxa linear
-de variacao por chamada da função. Um pouco complicado de entender mesmo.
-Para mais informações estude interpolação linear. """
-func aproximar(valor_atual, valor_alvo, variacao):
-	var diferenca = valor_alvo - valor_atual
-	
-	if diferenca > variacao:
-		return valor_atual + variacao
-	if diferenca < -variacao:
-		return valor_atual - variacao
-	
-	return  valor_alvo
+	velocidade_atual.y = global.aproximar(velocidade_atual.y, velocidade_queda, variacao)
