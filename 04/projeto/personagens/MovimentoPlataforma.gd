@@ -26,6 +26,7 @@ var velocidade_alvo = 0.0
 mover o personagem em x e em y. """
 var velocidade_atual = Vector2()
 
+# Obtém nó Global definido pelo script Global.gd
 onready var global = get_node("/root/Global")
 
 """ Para movimento e cálculos de física é recomendado o _physics_process

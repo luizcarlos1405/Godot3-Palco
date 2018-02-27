@@ -17,7 +17,7 @@ var cima = Vector2(0, -1)
 var velocidade_maxima_atual = 0.0
 
 # Velocidade que será dada ao jogador ao pular
-var velocidade_pulo = -500
+var velocidade_pulo = -550
 
 # Velocidade que o personagem quer alcançar em x e em y.
 var velocidade_alvo = 0.0
@@ -26,6 +26,7 @@ var velocidade_alvo = 0.0
 mover o personagem em x e em y. """
 var velocidade_atual = Vector2()
 
+# Obtém nó Global definido pelo script Global.gd
 onready var global = get_node("/root/Global")
 
 """ Para movimento e cálculos de física é recomendado o _physics_process

@@ -1,7 +1,5 @@
 extends Node
 
-""" Singleton. Nó disponível globalmente """
-
 var tempo = 0.0
 
 """ Essa função aproxima o valor atual para o final em uma taxa linear
@@ -18,4 +16,4 @@ func aproximar(valor_atual, valor_alvo, variacao):
 	return  valor_alvo
 
 func _process(delta):
-	tempo += delta
+	tempo = tempo + delta

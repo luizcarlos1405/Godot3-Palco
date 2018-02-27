@@ -7,7 +7,7 @@
 [node name="Arma" index="0" instance=ExtResource( 1 )]
 
 script = ExtResource( 2 )
-aceleracao = 5000
+aceleracao = 4000
 
 [node name="arma" type="Sprite" parent="." index="0"]
 
